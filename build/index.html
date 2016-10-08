@@ -1,159 +1,31 @@
-<!DOCTYPE html>
-<html class="no-js" id="node-html" lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Nest</title>
-
-    <meta name="description" content="">
-    <meta name="generator" content="kss-node">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="kss-assets/kss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
-
 </head>
-<body id="kss-node">
-<header class="kss-header">
-    <div class="kss-wrapper row">
-        <div class="kss-doc-title col">
-            <a class="kss-header-title-link" href="./">
-            Nest - Style Library
+<body>
+
+<header>
+    <nav class="primary-nav" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        <div class="mobile__menu">
+            <a href="#toggle" class="primary-nav__toggle">
+                <span class="button">Menu</span>
             </a>
         </div>
-        <nav class="kss-header-navbar col">
-            <ul class="kss-navbar">
-                <li class="kss-navbar__item">
-                    <a class="kss-navbar__item-link" href="./">Read Me</a>
-                </li>
-                <li class="kss-navbar__item">
-                    <a class="kss-navbar__item-link" href="//nest.local">Local Url</a>
-                </li>
-                <li class="kss-navbar__item">
-                    <a class="kss-navbar__item-link" href="//www.burnsy.me">Live Url</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+        <ul class="primary-nav__pages">
+            <li class="primary-nav__page ">
+                <a href="#" class="primary-nav__page__url --active" itemprop="url">
+                    <span itemprop="name">Home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<div class="kss-wrapper kss-wrapper-gridpak">
-    <div class="row">
-        <nav class="kss-nav col">
-            <ul class="kss-nav__menu">
-                    <li class="kss-nav__menu-item">
-                        <a class="kss-nav__menu-link" href="section-components.html">
-                            <span class="kss-nav__name">Components</span>
-                        </a>
-                                <ul class="kss-nav__menu-child">
-                                        <li class="kss-nav__menu-child-item">
-                                            <a class="kss-nav__menu-link" href="section-components.html#kssref-components-row">
-                                                <span class="kss-nav__name">Row</span>
-                                            </a>
-                                        </li>
-                                </ul>
-                    </li>
-                    <li class="kss-nav__menu-item">
-                        <a class="kss-nav__menu-link" href="section-navigation.html">
-                            <span class="kss-nav__name">Navigation</span>
-                        </a>
-                                <ul class="kss-nav__menu-child">
-                                        <li class="kss-nav__menu-child-item">
-                                            <a class="kss-nav__menu-link" href="section-navigation.html#kssref-navigation-buttons">
-                                                <span class="kss-nav__name">Buttons</span>
-                                            </a>
-                                        </li>
-                                        <li class="kss-nav__menu-child-item">
-                                            <a class="kss-nav__menu-link" href="section-navigation.html#kssref-navigation-primary-navigation-bar">
-                                                <span class="kss-nav__name">Primary Navigation Bar</span>
-                                            </a>
-                                        </li>
-                                </ul>
-                    </li>
-                    <li class="kss-nav__menu-item">
-                        <a class="kss-nav__menu-link" href="section-settings.html">
-                            <span class="kss-nav__name">Settings</span>
-                        </a>
-                                <ul class="kss-nav__menu-child">
-                                        <li class="kss-nav__menu-child-item">
-                                            <a class="kss-nav__menu-link" href="section-settings.html#kssref-settings-colors">
-                                                <span class="kss-nav__name">Colors</span>
-                                            </a>
-                                        </li>
-                                </ul>
-                    </li>
-                    <li class="kss-nav__menu-item">
-                        <a class="kss-nav__menu-link" href="section-tools.html">
-                            <span class="kss-nav__name">Tools</span>
-                        </a>
-                                <ul class="kss-nav__menu-child">
-                                        <li class="kss-nav__menu-child-item">
-                                            <a class="kss-nav__menu-link" href="section-tools.html#kssref-tools-mixin">
-                                                <span class="kss-nav__name">Tools - Mixin</span>
-                                            </a>
-                                        </li>
-                                        <li class="kss-nav__menu-child-item">
-                                            <a class="kss-nav__menu-link" href="section-tools.html#kssref-tools-mixin-border-radius-radius-">
-                                                <span class="kss-nav__name">Border-radius($radius)</span>
-                                            </a>
-                                        </li>
-                                        <li class="kss-nav__menu-child-item">
-                                            <a class="kss-nav__menu-link" href="section-tools.html#kssref-tools-mixin-button-rest-">
-                                                <span class="kss-nav__name">button-rest()</span>
-                                            </a>
-                                        </li>
-                                </ul>
-                    </li>
-            </ul>
-        </nav>
-        <div class="kss-main col">
-            <article role="main">
-                    <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-                        <h1 id="nest">Nest</h1>
-<h2 id="introduction">Introduction</h2>
-<blockquote>
-<p>A Styleguide Theme For KSS</p>
-</blockquote>
-<h2 id="code-samples">Code Samples</h2>
-<blockquote>
-<p>You&#39;ve gotten their attention in the introduction, now show a few code examples. So they get a visualization and as a bonus, make them copy/paste friendly.</p>
-</blockquote>
-<h2 id="installation">Installation</h2>
-<blockquote>
-<p>You will need to put nest into your project folder then call it as the builder</p>
-</blockquote>
-<h2 id="css-structure">CSS Structure</h2>
-<ul>
-<li>o-: Signify that something is an Object, and that it may be used in any number of unrelated contexts to the one you can currently see it in. Making modifications to these types of class could potentially have knock-on effects in a lot of other unrelated places. Tread carefully.</li>
-<li>c-: Signify that something is a Component. This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you’re currently looking at. Modifying these styles should be safe and have no side effects.</li>
-<li>u-: Signify that this class is a Utility class. It has a very specific role (often providing only one declaration) and should not be bound onto or changed. It can be reused and is not tied to any specific piece of UI. You will probably recognise this namespace from libraries and methodologies like SUIT.</li>
-<li>t-: Signify that a class is responsible for adding a Theme to a view. It lets us know that UI Components’ current cosmetic appearance may be due to the presence of a theme.</li>
-<li>s-: Signify that a class creates a new styling context or Scope. Similar to a Theme, but not necessarily cosmetic, these should be used sparingly—they can be open to abuse and lead to poor CSS if not used wisely.</li>
-<li>is-, has-: Signify that the piece of UI in question is currently styled a certain way because of a state or condition. This stateful namespace is gorgeous, and comes from SMACSS. It tells us that the DOM currently has a temporary, optional, or short-lived style applied to it due to a certain state being invoked.</li>
-<li>_: Signify that this class is the worst of the worst—a hack! Sometimes, although incredibly rarely, we need to add a class in our markup in order to force something to work. If we do this, we need to let others know that this class is less than ideal, and hopefully temporary (i.e. do not bind onto this).</li>
-<li>js-: Signify that this piece of the DOM has some behaviour acting upon it, and that JavaScript binds onto it to provide that behaviour. If you’re not a developer working with JavaScript, leave these well alone.</li>
-<li>qa-: Signify that a QA or Test Engineering team is running an automated UI test which needs to find or bind onto these parts of the DOM. Like the JavaScript namespace, this basically just reserves hooks in the DOM for non-CSS purposes.</li>
-</ul>
-
-                    </div>
-            </article>
-        </div>
-    </div>
-</div>
-<footer class="kss-footer">
-    <div class="kss-wrapper row">
-        <div class="kss-footer-info col">
-            <div class="kss-footer-coppyright">Nest builder made by  <a class="kss-footer-menu__item-link" href="//www.burnsy.me">Chris Burns</a></div>
-            <div class="kss-footer-infomation">Built with <a class="kss-footer-menu__item-link" href="https://github.com/kss-node/kss-node">KSS-Node</a></div>
-        </div>
-    </div>
-</footer>
-
-<!-- SCRIPTS -->
-<script src="kss-assets/js/jquery.min.js"></script>
-<script src="kss-assets/kss.js"></script>
-<script src="kss-assets/vendor/js/prettify.js"></script>
-<!--<script src="kss-assets/vendor/js/gridpak.js"></script>-->
-<script>
-    prettyPrint();
-</script>
 
 </body>
 </html>

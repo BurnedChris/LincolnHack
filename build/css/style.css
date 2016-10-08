@@ -21,4 +21,15 @@
     /* Green */
     color: #FFF; }
 
+.primary-nav {
+  background: #333; }
+  .primary-nav .primary-nav__page {
+    display: inline-block;
+    padding: 15px  5px; }
+    .primary-nav .primary-nav__page .primary-nav__page__url {
+      color: #fff;
+      text-decoration: none; }
+  .primary-nav .mobile__menu {
+    display: none; }
+
 /*# sourceMappingURL=style.css.map */

@@ -46,6 +46,7 @@ module.exports = function (grunt) {
                 tasks: ['sass_globbing', 'sass', 'kss']
             },
         },
+
     });
     grunt.loadNpmTasks('grunt-kss');
     grunt.loadNpmTasks('grunt-sass-globbing');
