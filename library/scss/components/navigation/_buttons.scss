@@ -1,0 +1,41 @@
+// Navigation
+//
+// This is where all the components to do with navigating a website will be
+//
+// Styleguide navigation
+
+// Buttons
+//
+// :hover       - Hover state.
+// :active      - Active state.
+// .disabled    - Disabled button. If you use `<button>` element, that is acceptable to add `disabled` attribute instead.
+//
+// Markup:
+// <button type="submit" class="button {{modifier_class}}">Button</button>
+// <button type="button" class="button {{modifier_class}}" >Click Me!</button>
+// <div class="button {{modifier_class}}"> button </div>
+//
+// Styleguide navigation - Buttons
+
+.button{
+  @include button-rest();
+
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  &:hover{
+    background-color: #376e37; /* Green */
+  }
+
+  &.disabled{
+    background-color: #5f5f5f; /* Green */
+    color: #FFF;
+  }
+
+}

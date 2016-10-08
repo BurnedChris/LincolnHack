@@ -1,0 +1,32 @@
+// Border-radius($radius)
+//
+// Creates a linear gradient background, from top to bottom.
+//
+// Compatible in IE6+, Firefox 2+, Safari 4+.
+//
+// $radius - The px or percentage for rounded corners .
+//
+// Styleguide Tools - Mixin - Border-radius($radius)
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// button-rest()
+//
+// Removed all styles from buttons
+//
+// Compatible in IE6+, Firefox 2+, Safari 4+.
+//
+// Styleguide Tools - Mixin - button-rest()
+
+@mixin button-rest() {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  line-height: normal;
+}

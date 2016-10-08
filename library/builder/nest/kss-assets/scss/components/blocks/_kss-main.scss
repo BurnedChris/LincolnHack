@@ -1,0 +1,73 @@
+// ------------------------------------------------------------------------------
+//   kss-main
+// ------------------------------------------------------------------------------
+.span_9,
+.kss-main {
+  .kss-section--depth-1 {
+    .kss-title {
+      color: $kss-color-navbar;
+      margin: 0 0 20px;
+    }
+    .kss-description {
+      p {
+        padding: 0;
+        margin: 0 0 10px;
+      }
+    }
+  }
+  .kss-section--depth-2 {
+    border-top: 1px solid #f0f2f1;
+    .kss-title {
+      margin: 30px 0 10px;
+    }
+
+    .kss-description {
+      p {
+        padding: 0;
+        margin: 0 0 10px;
+      }
+    }
+    .kss-modifier_list {
+      background: $kss-grey;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      padding: 15px;
+      overflow-x: auto;
+
+      .kss-modifier__list-name-modifier{
+        color: $kss-artoo;
+      }
+    }
+    .kss-modifier__wrapper {
+      border-right: solid #f0f2f1 2px;
+      border-left: solid #f0f2f1 2px;
+      position: relative;
+    }
+    .kss-modifier__example {
+      position: relative;
+      border-top: solid #f0f2f1 2px;
+      position: relative;
+      padding: 15px 20px 20px;
+    }
+
+    .kss-modifier__default-name,
+    .kss-modifier__name {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px 15px;
+      margin: 0;
+      font-size: 11px;
+      color: #999;
+      background: #f9f9f9;
+      border: 2px solid #eee;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-top: 0;
+    }
+  }
+}
+

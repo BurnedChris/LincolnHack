@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../../library/scss/build/style.scss",
+		"../../library/scss/build/settings.scss",
+		"../../library/scss/settings/_colors.scss",
+		"../../library/scss/build/tools.scss",
+		"../../library/scss/tools/_functions.scss",
+		"../../library/scss/tools/_mixins.scss",
+		"../../library/scss/build/components.scss",
+		"../../library/scss/components/navigation/_buttons.scss",
+		"../../library/scss/components/navigation/_navbar.scss",
+		"../../library/scss/components/objects/_row.scss"
+	],
+	"mappings": "AOmBA,AAAA,OAAO,CAAA;EFOL,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,IAAK;EACb,IAAI,EAAE,OAAQ;EACd,WAAW,EAAE,MAAO;EERpB,gBAAgB,EAAE,OAAQ;EAAE,WAAW;EACvC,MAAM,EAAE,IAAK;EACb,KAAK,EAAE,KAAM;EACb,OAAO,EAAE,QAAS;EAClB,UAAU,EAAE,MAAO;EACnB,eAAe,EAAE,IAAK;EACtB,OAAO,EAAE,YAAa;EACtB,SAAS,EAAE,IAAK,GAWjB;EArBD,AAAA,OAAO,AAYJ,MAAM,CAAA;IACL,gBAAgB,EAAE,OAAQ;IAAE,WAAW,EACxC;EAdH,AAAA,OAAO,AAgBJ,SAAS,CAAA;IACR,gBAAgB,EAAE,OAAQ;IAAE,WAAW;IACvC,KAAK,EAAE,IAAK,GACb",
+	"names": []
+}

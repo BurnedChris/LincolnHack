@@ -1,0 +1,32 @@
+{
+  "name": "Lincoln Hack",
+  "version": "1.0.0",
+  "description": "Start of a website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Burnsy/LincolnHack.git"
+  },
+  "keywords": [
+    "Lincoln",
+    "Hack"
+  ],
+  "author": "Chris Burns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Burnsy/LincolnHack/issues"
+  },
+  "homepage": "https://github.com/Burnsy/LincolnHack#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-kss": "^5.0.0",
+    "grunt-sass": "^1.2.1",
+    "grunt-sass-globbing": "^1.5.1",
+    "load-grunt-tasks": "^3.5.2",
+    "node-sass": "^3.8.0"
+  }
+}
