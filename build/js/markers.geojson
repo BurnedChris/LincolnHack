@@ -5,11 +5,13 @@
       "type": "Feature",
       "id": 1,
       "properties": {
-        "Description": "#",
-        "Category": "#",
-        "Time": "#",
-        "Date": "#",
-        "User": "#"
+        "Description": "Graffiti on the wall",
+        "Category": "Graffiti",
+        "Time": "12:30",
+        "Date": "12/10/2016",
+        "User": "burnedbychris",
+        "Image": "http://weknowyourdreams.com/images/graffiti/graffiti-05.jpg",
+        "Link": "https://twitter.com/BurnedByChris/status/784800676656316416"
       },
       "geometry": {
         "type": "Point",

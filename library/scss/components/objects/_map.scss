@@ -18,4 +18,12 @@
 
 #mapid {
   height: 90vh;
+
+  .leaflet-popup-content-wrapper {
+    background:#2c3e50;
+    color:#fff;
+  }
+  .leaflet-popup-tip{
+    background: #2c3e50;
+  }
 }

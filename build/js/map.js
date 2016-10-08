@@ -13,10 +13,15 @@ $.getJSON("/js/markers.geojson",function(data){
     L.geoJson(data,{
         pointToLayer: function(feature,latlng){
             var marker = L.marker(latlng);
-            marker.bindPopup(
-                feature.properties.Description
-                + '<br/>'
-                + feature.properties.Time);
+            marker.bindPopup( '<div class="popup__container--information">' +
+                '<div class="popup__name">' + feature.properties.Category + '</div>' +
+                '<div class="popup__description">' + feature.properties.Description + '</div>' +
+                '<div class="popup__time">' + feature.properties.Time + '</div>' +
+                '<div class="popup__date">' + feature.properties.Date + '</div>' +
+                '<div class="popup__user">' + feature.properties.User + '</div>' +
+                '<div class="popup__image"><img src="' + feature.properties.Image + '"> </div>' +
+                '<div class="popup__button"><a class="popup__link" href="'
+                + feature.properties.Link + '">More Details</a></div></div>');
             return marker;
         }
     }).addTo(communityMap);
