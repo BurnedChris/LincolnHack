@@ -9,21 +9,22 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{user}/{style}/tiles/256/{z}/{x}/{
     accessToken: 'pk.eyJ1IjoiYnVybnN5IiwiYSI6ImNpdTE4ODhlMDAwMDQybm5yNGR6bzVidGIifQ.nQiLqpwmAMOU_rgA6Mbtaw',
 }).addTo(communityMap);
 
-$.getJSON("/js/markers.geojson",function(data){
-    L.geoJson(data,{
-        pointToLayer: function(feature,latlng){
+$.getJSON("//lcw.ngrok.io/api/fetch_data", function (data) {
+    L.geoJson(data, {
+        pointToLayer: function (feature, latlng) {
             var marker = L.marker(latlng);
-            marker.bindPopup( '<div class="popup__container--information">' +
-                '<div class="popup__name">' + feature.properties.Category + '</div>' +
-                '<div class="popup__description">' + feature.properties.Description + '</div>' +
-                '<div class="popup__time">' + feature.properties.Time + '</div>' +
-                '<div class="popup__date">' + feature.properties.Date + '</div>' +
-                '<div class="popup__user">' + feature.properties.User + '</div>' +
+            marker.bindPopup('<div class="popup__image--avatar"><img src="' + feature.properties.Avatar + '"> </div>' +
+                '<div class="popup__container--information"><div class="popup__name"><div class="popup__infomation">Username @' + feature.properties.User + '</div>' +
+                '<div class="popup__catagory">Category: ' + feature.properties.Category + '</div></div>' +
+                '<div class="popup__description">Description: ' + feature.properties.Description + '</div>' +
+                '<div class="popup__date">Date: ' + feature.properties.Date + '</div></div>' +
                 '<div class="popup__image"><img src="' + feature.properties.Image + '"> </div>' +
-                '<div class="popup__button"><a class="popup__link" href="'
-                + feature.properties.Link + '">More Details</a></div></div>');
+                '<a class="popup__button" href="' + feature.properties.Link + '"><div class="popup__link">More Details</div></a>');
             return marker;
         }
+    }, {
+        maxWidth: 600,
+        autoPan: true
     }).addTo(communityMap);
 });
 
