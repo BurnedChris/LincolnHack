@@ -4,14 +4,18 @@
 //
 // Styleguide Components
 
-// Row
+// Map
 //
-// This is a standard Row.
+// This is a standard Map.
 //
 // Markup:
-// <div class="row">
-// content
+// <div class="map" id="mapid">
+//
 // </div>
 //
-// Styleguide Components - Row
+// Styleguide Components - Map
 
+
+#mapid {
+  height: 90vh;
+}

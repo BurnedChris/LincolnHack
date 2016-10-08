@@ -26,14 +26,16 @@
 // Styleguide navigation - Primary navigation Bar
 
 .primary-nav {
-  background: #333;
+  .primary-nav__pages {
+    @include list-reset();
+  }
 
   .primary-nav__page {
     display: inline-block;
-    padding: 15px  5px;
+    padding: 15px 5px;
 
-    .primary-nav__page__url{
-      color:#fff;
+    .primary-nav__page__url {
+      color: #fff;
       text-decoration: none;
     }
 

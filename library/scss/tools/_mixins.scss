@@ -30,3 +30,17 @@
   font: inherit;
   line-height: normal;
 }
+
+
+// list-rest()
+//
+// Removed all styles from lists
+//
+// Compatible in IE6+, Firefox 2+, Safari 4+.
+//
+// Styleguide Tools - Mixin - list-rest()
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+}

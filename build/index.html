@@ -6,26 +6,39 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-<header>
-    <nav class="primary-nav" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-        <div class="mobile__menu">
-            <a href="#toggle" class="primary-nav__toggle">
-                <span class="button">Menu</span>
-            </a>
+<header class="header">
+    <div class="wrapper">
+        <div class="logo">
+            Lincoln Community Watcher
         </div>
-        <ul class="primary-nav__pages">
-            <li class="primary-nav__page ">
-                <a href="#" class="primary-nav__page__url --active" itemprop="url">
-                    <span itemprop="name">Home</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="primary-nav" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="primary-nav__pages">
+                <li class="primary-nav__page ">
+                    <a href="#" class="primary-nav__page__url" itemprop="url">
+                        <span itemprop="name">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
+
+<div id="mapid">
+</div>
+
+
+
+<!-- Do No remove things will break! -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/js/leaflet.js"></script>
+<script language="JavaScript" type="text/javascript" src="/js/map.js"></script>
+
 
 </body>
 </html>
