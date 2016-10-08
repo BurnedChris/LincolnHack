@@ -432,7 +432,7 @@ textarea {
   display: none; }
 
 .header {
-  background: #333;
+  background: #2c3e50;
   position: relative;
   height: 50px; }
   .header .wrapper {
@@ -449,5 +449,42 @@ textarea {
 
 #mapid {
   height: 90vh; }
+  #mapid .leaflet-popup-content-wrapper {
+    background: #2c3e50;
+    color: #fff; }
+  #mapid .leaflet-popup-tip {
+    background: #2ecc71; }
+  #mapid .leaflet-popup-content {
+    width: auto !important; }
+  #mapid .popup__image img {
+    max-width: 550px; }
+  #mapid .popup__image--avatar {
+    border-radius: 5px; }
+    #mapid .popup__image--avatar img {
+      border-radius: 5px;
+      max-width: 100px; }
+  #mapid .popup__image--avatar {
+    padding: 15px;
+    display: inline-block;
+    position: absolute; }
+  #mapid .popup__container--information {
+    margin-left: 125px;
+    padding: 15px;
+    min-height: 100px; }
+  #mapid .popup__user {
+    font-size: 15px; }
+  #mapid .popup__button {
+    width: 100%;
+    display: block;
+    background: #2ecc71;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: -5px;
+    text-decoration: none; }
+    #mapid .popup__button :hover, #mapid .popup__button :focus {
+      text-decoration: underline; }
+  #mapid .popup__link {
+    color: #FFF;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

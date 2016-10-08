@@ -5,11 +5,13 @@
       "type": "Feature",
       "id": 1,
       "properties": {
-        "Description": "#",
-        "Category": "#",
-        "Time": "#",
-        "Date": "#",
-        "User": "#"
+        "Description": "Graffiti on the wall",
+        "Category": "Graffiti",
+        "Date": "12/10/2016",
+        "User": "BurnedByBurnsy",
+        "Avatar": "https://pbs.twimg.com/profile_images/767105379012583424/CpcxwhcT.jpg",
+        "Image": "http://weknowyourdreams.com/images/graffiti/graffiti-05.jpg",
+        "Link": "https://twitter.com/BurnedByChris/status/784800676656316416"
       },
       "geometry": {
         "type": "Point",
