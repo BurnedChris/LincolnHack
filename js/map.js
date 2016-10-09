@@ -14,7 +14,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{user}/{style}/tiles/256/{z}/{x}/{
 // dummy data
 // markers.geojson
 
-$.getJSON("//burnsy.github.io/LincolnHack/js/markers.geojson", function (data) {
+$.getJSON("/js/markers.geojson", function (data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
             var marker = L.marker(latlng);

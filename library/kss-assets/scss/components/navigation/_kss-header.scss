@@ -1,0 +1,45 @@
+// ------------------------------------------------------------------------------
+//   Heading
+// ------------------------------------------------------------------------------
+
+.kss-header {
+  border-top: $kss-color-navbar 5px solid;
+  border-bottom: #f0f2f1 2px solid;
+  color: $kss-color-navbar;
+  font-family: $kss-font-title;
+  padding: 25px 0;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.kss-header-title-link{
+  text-decoration: none;
+  color: $kss-color-navbar;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.kss-navbar {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  .kss-navbar__item {
+    display: inline-block;
+    .kss-navbar__item-link {
+      text-decoration: none;
+      color: $kss-color-navbar;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    + .kss-navbar__item{
+      margin-left: 20px;
+    }
+  }
+}

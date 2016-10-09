@@ -1,0 +1,14 @@
+// Import Now
+//
+// If you import this module directly, it will immediately output all the CSS
+// needed to normalize default HTML elements across all browsers.
+//
+// ```
+// @import "normalize/import-now";
+// ```
+
+@import "normalize/_normalize-mixin";
+@import "normalize/_support-for";
+@import "normalize/_variables";
+@import "normalize/_vertical-rhythm";
+@include normalize();

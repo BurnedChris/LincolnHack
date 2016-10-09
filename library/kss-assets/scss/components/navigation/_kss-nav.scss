@@ -1,0 +1,56 @@
+// ------------------------------------------------------------------------------
+//   nav Styles
+// ------------------------------------------------------------------------------
+.span_3,
+.kss-nav {
+
+  .kss-nav__menu {
+    margin: 0;
+    padding: 0;
+    border-right: solid #f0f2f1 2px;
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .kss-nav__menu-link {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .kss-nav__menu-item {
+    padding: 1em 0 10px;
+
+    .kss-nav__menu-link {
+      color: #525252;
+    }
+  }
+
+  .kss-nav__menu-child {
+    border-top: 1px dashed #f0f2f1;
+    display: block;
+    list-style: none;
+    margin: .5em 0 0;
+    padding: .5em 0 0;
+
+    .kss-nav__menu-child-item {
+      padding: 0;
+      margin: 0;
+
+      .kss-nav__menu-link {
+        color: $kss-color-navbar;
+      }
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 758px) {
+
+    .kss-nav__menu {
+      border-right: solid #f0f2f1 0px;
+      width: 100%;
+    }
+  }
+
+}
