@@ -1,6 +1,6 @@
 # Lincoln Hack
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/Burnsy/LincolnHack/raw/master/screenshot.png)
 ## Demo
 [Demo Site](https://burnsy.github.io/LincolnHack/)
 ## Description
