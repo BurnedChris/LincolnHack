@@ -11,7 +11,10 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{user}/{style}/tiles/256/{z}/{x}/{
 
 // live server
 // //lcw.ngrok.io/api/fetch_faux_data?n=15
-$.getJSON("markers.geojson", function (data) {
+// dummy data
+// markers.geojson
+
+$.getJSON("js/markers.geojson", function (data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
             var marker = L.marker(latlng);
@@ -29,23 +32,3 @@ $.getJSON("markers.geojson", function (data) {
         autoPan: true
     }).addTo(communityMap);
 });
-
-$.getJSON("//lcw.ngrok.io/api/fetch_data", function (data) {
-    L.geoJson(data, {
-        pointToLayer: function (feature, latlng) {
-            var marker = L.marker(latlng);
-            marker.bindPopup('<div class="popup__image--avatar"><img src="' + feature.properties.Avatar + '"> </div>' +
-                '<div class="popup__container--information"><div class="popup__infomation"><div class="popup__name">@' + feature.properties.User + '</div>' +
-                '<div class="popup__catagory">Category: ' + feature.properties.Category + '</div>' +
-                '<div class="popup__date">Date: ' + feature.properties.Date + '</div></div></div>' +
-                '<div class="popup__description">"' + feature.properties.Description + '"</div>' +
-                '<div class="popup__image"><img src="' + feature.properties.Image + '"> </div>' +
-                '<a class="popup__button" href="' + feature.properties.Link + '"><div class="popup__link">More Details</div></a>');
-            return marker;
-        }
-    }, {
-        maxWidth: 600,
-        autoPan: true
-    }).addTo(communityMap);
-});
-
