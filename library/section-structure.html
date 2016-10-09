@@ -8,6 +8,8 @@
     <meta name="generator" content="kss-node">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="kss-assets/kss.css">
+    <link rel="stylesheet" href="//burnsy.github.io/LincolnHack/css/style.css">
+
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
@@ -65,11 +67,6 @@
                             <span class="kss-nav__name">Navigation</span>
                         </a>
                                 <ul class="kss-nav__menu-child">
-                                        <li class="kss-nav__menu-child-item">
-                                            <a class="kss-nav__menu-link" href="section-navigation.html#kssref-navigation-buttons">
-                                                <span class="kss-nav__name">Buttons</span>
-                                            </a>
-                                        </li>
                                         <li class="kss-nav__menu-child-item">
                                             <a class="kss-nav__menu-link" href="section-navigation.html#kssref-navigation-header">
                                                 <span class="kss-nav__name">Header</span>
@@ -192,9 +189,22 @@
 <script src="kss-assets/js/prettify.js"></script>
 
 <script src="//burnsy.github.io/LincolnHack/js/leaflet.js"></script>
-<script src="//burnsy.github.io/LincolnHack/js/map.js"></script>
-<!--<script src="kss-assets/vendor/js/gridpak.js"></script>-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+<script src="/js/graphs.js"></script>
 <script>
+
+    communityMap = L.map('mapid').setView([53.227846, -0.547053], 15);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{user}/{style}/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: '',
+        maxZoom: 18,
+        id: 'burnsy.1jka5oj8',
+        user: 'mapbox',
+        style: 'streets-v9',
+        accessToken: 'pk.eyJ1IjoiYnVybnN5IiwiYSI6ImNpdTE4ODhlMDAwMDQybm5yNGR6bzVidGIifQ.nQiLqpwmAMOU_rgA6Mbtaw',
+    }).addTo(communityMap);
+
+
     prettyPrint();
 </script>
 
