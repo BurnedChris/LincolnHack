@@ -1,0 +1,25 @@
+// Card
+//
+//
+// Markup:
+// <div class="card {{modifier_class}}">
+//    <div class="blank-box"></div>
+//  button </div>
+//
+// Styleguide Components - Card
+
+.card {
+  background: #e3e3e3;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+
+  .blank-box {
+    background: #333;
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+}
