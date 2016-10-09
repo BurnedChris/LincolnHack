@@ -23,6 +23,11 @@ module.exports = function (grunt) {
                 files: {
                     'build/css/style.css': 'library/scss/build/style.scss'
                 }
+            },
+            kss: {
+                files: {
+                    'library/builder/nest/kss-assets/kss.css': 'library/builder/nest/kss-assets/scss/kss.scss'
+                }
             }
         },
         kss: {
