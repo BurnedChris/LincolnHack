@@ -4,7 +4,6 @@
     <list default="true" id="e6f18431-25a4-4e32-b095-e421630d293b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/index.html" afterPath="$PROJECT_DIR$/library/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/section-components.html" afterPath="$PROJECT_DIR$/library/section-components.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/section-navigation.html" afterPath="$PROJECT_DIR$/library/section-navigation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/section-structure.html" afterPath="$PROJECT_DIR$/library/section-structure.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/section-tools.html" afterPath="$PROJECT_DIR$/library/section-tools.html" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+            <state relative-caret-position="391">
+              <caret line="176" column="8" selection-start-line="176" selection-start-column="8" selection-end-line="176" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -53,7 +52,7 @@
       <file leaf-file-name="section-components.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/section-components.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="-4559">
               <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
               <folding />
             </state>
@@ -73,8 +72,8 @@
       <file leaf-file-name="section-tools.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/section-tools.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+            <state relative-caret-position="405">
+              <caret line="304" column="8" selection-start-line="304" selection-start-column="8" selection-end-line="304" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -83,8 +82,8 @@
       <file leaf-file-name="section-structure.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/section-structure.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+            <state relative-caret-position="388">
+              <caret line="188" column="8" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -93,8 +92,8 @@
       <file leaf-file-name="section-navigation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/section-navigation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+            <state relative-caret-position="388">
+              <caret line="280" column="8" selection-start-line="280" selection-start-column="8" selection-end-line="280" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -126,10 +125,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/statistics.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/library/section-tools.html" />
-        <option value="$PROJECT_DIR$/library/section-structure.html" />
-        <option value="$PROJECT_DIR$/library/section-navigation.html" />
         <option value="$PROJECT_DIR$/library/section-components.html" />
+        <option value="$PROJECT_DIR$/library/section-navigation.html" />
+        <option value="$PROJECT_DIR$/library/section-structure.html" />
+        <option value="$PROJECT_DIR$/library/section-tools.html" />
         <option value="$PROJECT_DIR$/library/index.html" />
       </list>
     </option>
@@ -287,12 +286,12 @@
       <updated>1476038278698</updated>
       <workItem from="1476038279835" duration="2746000" />
       <workItem from="1476042897898" duration="50000" />
-      <workItem from="1476052190586" duration="979000" />
+      <workItem from="1476052190586" duration="1101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4288000" />
+    <option name="totallyTimeSpent" value="4410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -458,33 +457,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/section-tools.html">
+    <entry file="file://$PROJECT_DIR$/library/section-navigation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+        <state relative-caret-position="388">
+          <caret line="280" column="8" selection-start-line="280" selection-start-column="8" selection-end-line="280" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/section-structure.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+        <state relative-caret-position="388">
+          <caret line="188" column="8" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/section-navigation.html">
+    <entry file="file://$PROJECT_DIR$/library/section-tools.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+        <state relative-caret-position="405">
+          <caret line="304" column="8" selection-start-line="304" selection-start-column="8" selection-end-line="304" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/section-components.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="-4559">
           <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
           <folding />
         </state>
@@ -492,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+        <state relative-caret-position="391">
+          <caret line="176" column="8" selection-start-line="176" selection-start-column="8" selection-end-line="176" selection-end-column="8" />
           <folding />
         </state>
       </provider>
