@@ -249,8 +249,8 @@ function faux_data($n) {
 			"geometry" => [
 				"type" => "Point",
 				"coordinates" => [
-				$faker->randomFloat($nbMaxDecimals = 5, $min = -0.13936, $max = -0.0236),
-				$faker->randomFloat($nbMaxDecimals = 5, $min = 51.23449, $max = 56.23449),
+				$faker->randomFloat($nbMaxDecimals = 5, $min = -0.55023, $max = -0.55923),
+				$faker->randomFloat($nbMaxDecimals = 5, $min = 53.23037, $max = 53.20437),
 				]
 			]
 			];
