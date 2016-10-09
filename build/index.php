@@ -34,11 +34,6 @@ Flight::map('pullTwitterData', function() {
 	return $results;
 });
 
-// Initialise Instagram auth and parse Instagram data.
-// Flight::map('pullInstagramData', function() {
-// });
-
-
 // Main display route.
 Flight::route('GET /', function() {
 	include "index.html";

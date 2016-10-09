@@ -2,7 +2,6 @@
     "require": {
         "mikecao/flight": "^1.2",
         "abraham/twitteroauth": "^0.6.4",
-        "liamcottle/instagram-sdk-php": "^1.0",
         "vlucas/phpdotenv": "^2.4",
         "fzaninotto/faker": "^1.6",
         "mistic100/randomcolor": "^1.0"
