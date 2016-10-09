@@ -1190,29 +1190,6 @@ Span 12:    100%
   font-size: 0;
   content: ' '; }
 
-.button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  font: inherit;
-  line-height: normal;
-  background-color: #4CAF50;
-  /* Green */
-  border: none;
-  color: white;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; }
-  .button:hover {
-    background-color: #376e37;
-    /* Green */ }
-  .button.disabled {
-    background-color: #5f5f5f;
-    /* Green */
-    color: #FFF; }
-
 .header {
   border-top: #009E49 5px solid;
   border-bottom: #f0f2f1 2px solid;

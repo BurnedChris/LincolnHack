@@ -7,8 +7,8 @@
 // @import "normalize/import-now";
 // ```
 
-@import "normalize/_normalize-mixin";
-@import "normalize/_support-for";
-@import "normalize/_variables";
-@import "normalize/_vertical-rhythm";
+@import "normalize/normalize-mixin";
+@import "normalize/support-for";
+@import "normalize/variables";
+@import "normalize/vertical-rhythm";
 @include normalize();
