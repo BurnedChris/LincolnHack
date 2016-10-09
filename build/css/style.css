@@ -594,27 +594,47 @@ Span 12:    100%
     color: #FFF; }
 
 .header {
+<<<<<<< HEAD
   background: #2c3e50;
   position: relative;
   height: 60px; }
+=======
+  border-top: #009E49 5px solid;
+  border-bottom: #f0f2f1 2px solid;
+  color: #009E49;
+  font-family: "Roboto", sans-serif;
+  padding: 25px 0; }
+>>>>>>> styling
   .header .primary-nav {
     display: inline-block;
     float: right; }
 
 .logo {
+<<<<<<< HEAD
   color: #fff;
   display: inline-block;
   line-height: 60px; }
+=======
+  color: #009E49;
+  display: inline-block;
+  text-decoration: none; }
+>>>>>>> styling
 
 .primary-nav .primary-nav__pages {
   margin: 0;
   padding: 0; }
 
 .primary-nav .primary-nav__page {
+<<<<<<< HEAD
   display: inline-block;
   padding: 20px 5px; }
+=======
+  display: inline-block; }
+  .primary-nav .primary-nav__page + .primary-nav__page {
+    margin-left: 20px; }
+>>>>>>> styling
   .primary-nav .primary-nav__page .primary-nav__page__url {
-    color: #fff;
+    color: #009E49;
     text-decoration: none; }
 
 .primary-nav .mobile__menu {
@@ -639,27 +659,25 @@ Span 12:    100%
 #mapid {
   height: 90vh; }
   #mapid .leaflet-popup-content-wrapper {
-    background: #2c3e50;
-    color: #fff; }
+    background: #fff;
+    color: #5f5f5f; }
   #mapid .leaflet-popup-tip {
     background: #2ecc71; }
-  #mapid .leaflet-popup-content {
-    width: auto !important; }
   #mapid .popup__image img {
-    max-width: 550px; }
+    max-width: 301px;
+    width: 100%; }
   #mapid .popup__image--avatar {
     border-radius: 5px; }
     #mapid .popup__image--avatar img {
       border-radius: 5px;
-      max-width: 100px; }
+      max-width: 65px; }
   #mapid .popup__image--avatar {
     padding: 15px;
     display: inline-block;
     position: absolute; }
   #mapid .popup__container--information {
-    margin-left: 125px;
-    padding: 15px;
-    min-height: 100px; }
+    margin-left: 80px;
+    padding: 15px 15px 0; }
   #mapid .popup__user {
     font-size: 15px; }
   #mapid .popup__button {
@@ -675,5 +693,15 @@ Span 12:    100%
   #mapid .popup__link {
     color: #FFF;
     text-decoration: none; }
+  #mapid .popup__name {
+    font-size: 16px;
+    font-weight: bold; }
+  #mapid .popup__description {
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: .01em;
+    border-top: #f0f2f1 3px solid;
+    margin: 5px 15px;
+    padding-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */

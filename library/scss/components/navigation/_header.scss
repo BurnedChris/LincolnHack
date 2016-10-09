@@ -27,18 +27,24 @@
 //
 // Styleguide navigation - header
 
-.header{
-  background: #2c3e50;
-  position: relative;
-  height: 60px;
 
-  .primary-nav{
+.header {
+  border-top: #009E49 5px solid;
+  border-bottom: #f0f2f1 2px solid;
+  color: #009E49;
+  font-family: "Roboto", sans-serif;
+  padding: 25px 0;
+
+  .primary-nav {
     display: inline-block;
     float: right;
   }
 }
-.logo{
-  color:#fff;
+
+.logo {
+  color: #009E49;
   display: inline-block;
-  line-height: 60px;
+
+  text-decoration: none;
+
 }

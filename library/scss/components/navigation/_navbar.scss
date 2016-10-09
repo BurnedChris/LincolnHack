@@ -31,10 +31,15 @@
 
   .primary-nav__page {
     display: inline-block;
-    padding: 20px 5px;
+
+
+    & + .primary-nav__page{
+      margin-left: 20px;
+    }
+
 
     .primary-nav__page__url {
-      color: #fff;
+      color: #009E49;
       text-decoration: none;
     }
 
