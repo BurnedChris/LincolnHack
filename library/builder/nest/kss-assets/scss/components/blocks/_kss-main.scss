@@ -3,6 +3,9 @@
 // ------------------------------------------------------------------------------
 .span_9,
 .kss-main {
+  img{
+    max-width: 100%;
+  }
   .kss-section--depth-1 {
     .kss-title {
       color: $kss-color-navbar;

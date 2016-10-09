@@ -34,11 +34,11 @@ module.exports = function (grunt) {
             options: {
                 css: '/css/style.css',
                 builder: 'library/builder/nest',
-                title: 'Nest',
+                title: 'Lincoln Community Watcher',
                 homepage: 'homepage.md',
                 verbose: true,
-                localURL: '//lincolnhack.local',
-                liveURL: '//lincolnhack.org'
+                localURL: '//lincolnhack.local/index.html',
+                liveURL: '//burnsy.github.io/LincolnHack/'
             },
             dist: {
                 src: ['library/scss'],
