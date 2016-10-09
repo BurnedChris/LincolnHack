@@ -9,7 +9,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{user}/{style}/tiles/256/{z}/{x}/{
     accessToken: 'pk.eyJ1IjoiYnVybnN5IiwiYSI6ImNpdTE4ODhlMDAwMDQybm5yNGR6bzVidGIifQ.nQiLqpwmAMOU_rgA6Mbtaw',
 }).addTo(communityMap);
 
-$.getJSON("//lcw.ngrok.io/api/fetch_faux_data?n=15", function (data) {
+// live server
+// //lcw.ngrok.io/api/fetch_faux_data?n=15
+$.getJSON("markers.geojson", function (data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
             var marker = L.marker(latlng);

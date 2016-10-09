@@ -1,9 +1,10 @@
 # Lincoln Hack
 
-This project was made during [Lincoln Hack](lincolnhack.org) 2016, a 24hr Hackathon in Lincoln, England.
+![Screenshot](screenshot.png)
+
+Our project was one of the winning projects. It was made during [Lincoln Hack](lincolnhack.org) 2016, a 24hr Hackathon in Lincoln, England.
 
 This project is a Lincoln Community Watcher.
-
 
 ## Requirements
 
