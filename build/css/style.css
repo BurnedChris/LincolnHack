@@ -394,6 +394,182 @@ optgroup {
 textarea {
   overflow: auto; }
 
+/**
+ * Gridpak Beta SCSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @simplygoodwork
+ */
+/* Reusable column setup */
+.col {
+  border: 0px solid transparent;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important; }
+
+/* 1. 2 Column Grid 0px - 539px
+-----------------------------------------------------------------------------
+
+Span 1:    49.5%
+Span 2:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 539px) {
+  .col {
+    margin-left: 1%;
+    padding: 0 0.5%; }
+  /* --- Gridpak variables ---*/
+  .row .col:first-child {
+    margin-left: 0; }
+  /*
+  Add your semantic classnames in alongside their corresponding spans here. e.g.
+
+  .span_3,
+  .my_semantic_class_name {
+      ...
+  }
+
+  */
+  .span_1 {
+    width: 49.5%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%; }
+  .span_2 {
+    margin-left: 0;
+    width: 100%; } }
+
+/* 2. 6 Column Grid 540px - 758px
+-----------------------------------------------------------------------------
+
+Span 1:    15.8333333333%
+Span 2:    32.6666666667%
+Span 3:    49.5%
+Span 4:    66.3333333333%
+Span 5:    83.1666666667%
+Span 6:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 540px) and (max-width: 758px) {
+  .col {
+    margin-left: 1%;
+    padding: 0 0.5%; }
+  /* --- Gridpak variables ---*/
+  .span_1 {
+    width: 15.8333333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%; }
+  .span_2 {
+    width: 32.6666666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%; }
+  .span_3,
+  .collumn_equal {
+    width: 49.5%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%; }
+  .span_4 {
+    width: 66.3333333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%; }
+  .span_5 {
+    width: 83.1666666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%; }
+  .span_6 {
+    margin-left: 0;
+    width: 100%; } }
+
+/* 3. 12 Column Grid 759px - Infinity
+-----------------------------------------------------------------------------
+
+Span 1:    7.41666666667%
+Span 2:    15.8333333333%
+Span 3:    24.25%
+Span 4:    32.6666666667%
+Span 5:    41.0833333333%
+Span 6:    49.0%
+Span 7:    57.9166666667%
+Span 8:    66.3333333333%
+Span 9:    74.75%
+Span 10:    83.1666666667%
+Span 11:    91.5833333333%
+Span 12:    100%
+
+----------------------------------------------------------------------------- */
+@media screen and (min-width: 759px) {
+  .col {
+    margin-left: 0%;
+    padding: 0 0.5%; }
+  /* --- Gridpak variables ---*/
+  .span_1 {
+    width: 8.3333333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_2 {
+    width: 16.6666666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_3 {
+    width: 25%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_4 {
+    width: 33.3333333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_5 {
+    width: 41.6666666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_6, .collumn_equal {
+    width: 50%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_7 {
+    width: 58.3333333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_8 {
+    width: 66.6666666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_9 {
+    width: 75%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_10 {
+    width: 83.3333333333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_11 {
+    width: 91.6666666667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 0%; }
+  .span_12 {
+    margin-left: 0;
+    width: 100%; } }
+
 .button {
   margin: 0;
   padding: 0;
@@ -417,27 +593,10 @@ textarea {
     /* Green */
     color: #FFF; }
 
-.primary-nav .primary-nav__pages {
-  margin: 0;
-  padding: 0; }
-
-.primary-nav .primary-nav__page {
-  display: inline-block;
-  padding: 15px 5px; }
-  .primary-nav .primary-nav__page .primary-nav__page__url {
-    color: #fff;
-    text-decoration: none; }
-
-.primary-nav .mobile__menu {
-  display: none; }
-
 .header {
   background: #2c3e50;
   position: relative;
-  height: 50px; }
-  .header .wrapper {
-    max-width: 1000px;
-    margin: auto; }
+  height: 60px; }
   .header .primary-nav {
     display: inline-block;
     float: right; }
@@ -445,7 +604,37 @@ textarea {
 .logo {
   color: #fff;
   display: inline-block;
-  line-height: 50px; }
+  line-height: 60px; }
+
+.primary-nav .primary-nav__pages {
+  margin: 0;
+  padding: 0; }
+
+.primary-nav .primary-nav__page {
+  display: inline-block;
+  padding: 20px 5px; }
+  .primary-nav .primary-nav__page .primary-nav__page__url {
+    color: #fff;
+    text-decoration: none; }
+
+.primary-nav .mobile__menu {
+  display: none; }
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto; }
+
+.card {
+  background: #e3e3e3;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px; }
+  .card .blank-box {
+    background: #333;
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px; }
 
 #mapid {
   height: 90vh; }
