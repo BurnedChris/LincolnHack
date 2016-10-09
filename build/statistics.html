@@ -14,32 +14,39 @@
 
 </head>
 <body>
+
 <header class="header">
-    <div class="wrapper">
-        <a href="index.html" class="logo" itemprop="url">
-            <span itemprop="name">Lincoln Community Watcher</span>
-        </a>
+    <div class="wrapper +clearfix">
+        <div class="col collumn_equal">
+            <a href="index.html" class="logo" itemprop="url">
+                <span itemprop="name">Lincoln Community Watcher</span>
+            </a>
+        </div>
 
-        <nav class="primary-nav" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-            <ul class="primary-nav__pages">
-                <li class="primary-nav__page">
-                    <a href="index.html" class="primary-nav__page__url" itemprop="url">
-                        <span itemprop="name">Home</span>
-                    </a>
-                <li class="primary-nav__page">
-                    <a href="statistics.html" class="primary-nav__page__url" itemprop="url">
-                        <span itemprop="name">Statistics</span>
-                    </a>
-                </li>
-                <li class="primary-nav__page">
+        <div class="col collumn_equal">
+            <nav class="primary-nav" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="primary-nav__pages">
 
-                    <a href="https://twitter.com/hashtag/LincolnCommunityWatch?src=hash" class="primary-nav__page__url"
-                       itemprop="url">
-                        <span itemprop="name">Twitter</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                    <li class="primary-nav__page">
+                        <a href="index.html" class="primary-nav__page__url" itemprop="url">
+                            <span itemprop="name">Home</span>
+                        </a>
+                    <li class="primary-nav__page">
+                        <a href="statistics.html" class="primary-nav__page__url" itemprop="url">
+                            <span itemprop="name">Statistics</span>
+                        </a>
+                    </li>
+                    <li class="primary-nav__page">
+                        <a href="https://twitter.com/hashtag/LincolnCommunityWatch?src=hash"
+                           class="primary-nav__page__url"
+                           itemprop="url">
+
+                            <span itemprop="name">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 
@@ -52,11 +59,11 @@
     </div>
     <div class="col collumn_equal">
         <div class="card">
-            <div class="card__title"> Activitys </div>
+            <div class="card__title"> Activity </div>
             <canvas id="activitiesChart" width="200" height="200"></canvas>
         </div>
         <div class="card">
-            <div class="card__title"> Most Conubutors </div>
+            <div class="card__title"> Most contributing User </div>
             <canvas id="mauChart" width="200" height="200"></canvas>
         </div>
     </div>

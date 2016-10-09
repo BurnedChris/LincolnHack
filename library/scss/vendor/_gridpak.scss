@@ -8,14 +8,14 @@
 /* Reusable column setup */
 
 @mixin col {
-  border:0px solid rgba(0,0,0,0);
-  float:left;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  -moz-background-clip:padding-box !important;
-  -webkit-background-clip:padding-box !important;
-  background-clip:padding-box !important;
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
 }
 
 .col {
@@ -24,21 +24,20 @@
 
 @mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
   $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
-  width:($one_col * $num) + ($gutter_pc * ($num - 1));
-  border-left-width:$gutter_px;
-  padding:$padding;
-  margin-left:$gutter_pc;
+  width: ($one_col * $num) + ($gutter_pc * ($num - 1));
+  border-left-width: $gutter_px;
+  padding: $padding;
+  margin-left: $gutter_pc;
 }
 
 @mixin span_first {
-  margin-left:0;
+  margin-left: 0;
 }
-
 
 /* 1. 2 Column Grid 0px - 539px
 -----------------------------------------------------------------------------
 
-Span 1:    49.5%
+Span 1:    49%
 Span 2:    100%
 
 ----------------------------------------------------------------------------- */
@@ -46,8 +45,8 @@ Span 2:    100%
 @media screen and (min-width: 0px) and (max-width: 539px) {
 
   .col {
-    margin-left:1%;
-    padding:0 0.5%;
+    margin-left: 1%;
+    padding: 0 0.5%;
   }
 
   /* --- Gridpak variables ---*/
@@ -56,12 +55,9 @@ Span 2:    100%
   $gutter_px: 0;
   $gutter_pc: 1%;
 
-
-
   .row .col:first-child {
     @include span_first;
   }
-
 
   /*
   Add your semantic classnames in alongside their corresponding spans here. e.g.
@@ -75,9 +71,30 @@ Span 2:    100%
   .span_1 {
     @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
-  .span_2, {
+  .span_2,
+  .collumn_equal {
     @include span_first;
-    width:100%;
+    width: 100%;
+  }
+
+  .header {
+    height: 60px!important;
+    padding: 10px!important;
+    .col.collumn_equal {
+      .logo {
+        text-align: center;
+        display: block;
+        padding-bottom: 10px;
+        border-bottom: #f0f2f1 3px solid;
+      }
+      .primary-nav {
+        padding-top: 10px;
+        margin: auto;
+        text-align: center;
+        float: none;
+        display: block;
+      }
+    }
   }
 
 }
@@ -87,7 +104,7 @@ Span 2:    100%
 
 Span 1:    15.8333333333%
 Span 2:    32.6666666667%
-Span 3:    49.5%
+Span 3:    49%
 Span 4:    66.3333333333%
 Span 5:    83.1666666667%
 Span 6:    100%
@@ -97,8 +114,8 @@ Span 6:    100%
 @media screen and (min-width: 540px) and (max-width: 758px) {
 
   .col {
-    margin-left:1%;
-    padding:0 0.5%;
+    margin-left: 0%;
+    padding: 0 0.5%;
   }
 
   /* --- Gridpak variables ---*/
@@ -107,7 +124,6 @@ Span 6:    100%
   $gutter_px: 0;
   $gutter_pc: 1%;
 
-
   .span_1 {
     @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
@@ -115,8 +131,9 @@ Span 6:    100%
     @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
   .span_3,
-  .collumn_equal{
+  .collumn_equal {
     @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+    margin-left: 0;
   }
   .span_4 {
     @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
@@ -126,7 +143,20 @@ Span 6:    100%
   }
   .span_6 {
     @include span_first;
-    width:100%;
+    width: 100%;
+  }
+  .header {
+    .col.collumn_equal {
+      .logo {
+        text-align: left;
+        display: block;
+      }
+      .primary-nav {
+        margin: auto;
+        float: right;
+        display: block;
+      }
+    }
   }
 }
 
@@ -151,8 +181,8 @@ Span 12:    100%
 @media screen and (min-width: 759px) {
 
   .col {
-    margin-left:0%;
-    padding:0 0.5%;
+    margin-left: 0%;
+    padding: 0 0.5%;
   }
 
   /* --- Gridpak variables ---*/
@@ -160,7 +190,6 @@ Span 12:    100%
   $padding: 0 0.5%;
   $gutter_px: 0;
   $gutter_pc: 0%;
-
 
   .span_1 {
     @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
@@ -177,17 +206,16 @@ Span 12:    100%
   .span_5 {
     @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
-  .span_6, .collumn_equal
-  {
+  .span_6, .collumn_equal {
     @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
   .span_7 {
     @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
-  .span_8{
+  .span_8 {
     @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
-  .span_9{
+  .span_9 {
     @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
   .span_10 {
@@ -196,9 +224,17 @@ Span 12:    100%
   .span_11 {
     @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
   }
-  .span_12{
+  .span_12 {
     @include span_first;
-    width:100%;
+    width: 100%;
   }
 }
 
+.\+clearfix:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  content: ' ';
+}

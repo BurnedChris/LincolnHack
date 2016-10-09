@@ -414,7 +414,7 @@ textarea {
 /* 1. 2 Column Grid 0px - 539px
 -----------------------------------------------------------------------------
 
-Span 1:    49.5%
+Span 1:    49%
 Span 2:    100%
 
 ----------------------------------------------------------------------------- */
@@ -439,16 +439,31 @@ Span 2:    100%
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 1%; }
-  .span_2 {
+  .span_2,
+  .collumn_equal {
     margin-left: 0;
-    width: 100%; } }
+    width: 100%; }
+  .header {
+    height: 60px !important;
+    padding: 10px !important; }
+    .header .col.collumn_equal .logo {
+      text-align: center;
+      display: block;
+      padding-bottom: 10px;
+      border-bottom: #f0f2f1 3px solid; }
+    .header .col.collumn_equal .primary-nav {
+      padding-top: 10px;
+      margin: auto;
+      text-align: center;
+      float: none;
+      display: block; } }
 
 /* 2. 6 Column Grid 540px - 758px
 -----------------------------------------------------------------------------
 
 Span 1:    15.8333333333%
 Span 2:    32.6666666667%
-Span 3:    49.5%
+Span 3:    49%
 Span 4:    66.3333333333%
 Span 5:    83.1666666667%
 Span 6:    100%
@@ -456,7 +471,7 @@ Span 6:    100%
 ----------------------------------------------------------------------------- */
 @media screen and (min-width: 540px) and (max-width: 758px) {
   .col {
-    margin-left: 1%;
+    margin-left: 0%;
     padding: 0 0.5%; }
   /* --- Gridpak variables ---*/
   .span_1 {
@@ -474,7 +489,8 @@ Span 6:    100%
     width: 49.5%;
     border-left-width: 0;
     padding: 0 0.5%;
-    margin-left: 1%; }
+    margin-left: 1%;
+    margin-left: 0; }
   .span_4 {
     width: 66.3333333333%;
     border-left-width: 0;
@@ -487,7 +503,14 @@ Span 6:    100%
     margin-left: 1%; }
   .span_6 {
     margin-left: 0;
-    width: 100%; } }
+    width: 100%; }
+  .header .col.collumn_equal .logo {
+    text-align: left;
+    display: block; }
+  .header .col.collumn_equal .primary-nav {
+    margin: auto;
+    float: right;
+    display: block; } }
 
 /* 3. 12 Column Grid 759px - Infinity
 -----------------------------------------------------------------------------
@@ -570,6 +593,14 @@ Span 12:    100%
     margin-left: 0;
     width: 100%; } }
 
+.\+clearfix:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  content: ' '; }
+
 .button {
   margin: 0;
   padding: 0;
@@ -639,7 +670,7 @@ Span 12:    100%
     margin-bottom: 15px; }
 
 #mapid {
-  height: 90vh; }
+  height: 89vh; }
   #mapid .leaflet-popup-content-wrapper {
     background: #fff;
     color: #5f5f5f; }
