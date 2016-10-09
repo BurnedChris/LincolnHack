@@ -594,45 +594,28 @@ Span 12:    100%
     color: #FFF; }
 
 .header {
-<<<<<<< HEAD
-  background: #2c3e50;
-  position: relative;
-  height: 60px; }
-=======
   border-top: #009E49 5px solid;
   border-bottom: #f0f2f1 2px solid;
   color: #009E49;
   font-family: "Roboto", sans-serif;
   padding: 25px 0; }
->>>>>>> styling
   .header .primary-nav {
     display: inline-block;
     float: right; }
 
 .logo {
-<<<<<<< HEAD
-  color: #fff;
-  display: inline-block;
-  line-height: 60px; }
-=======
   color: #009E49;
   display: inline-block;
   text-decoration: none; }
->>>>>>> styling
 
 .primary-nav .primary-nav__pages {
   margin: 0;
   padding: 0; }
 
 .primary-nav .primary-nav__page {
-<<<<<<< HEAD
-  display: inline-block;
-  padding: 20px 5px; }
-=======
   display: inline-block; }
   .primary-nav .primary-nav__page + .primary-nav__page {
     margin-left: 20px; }
->>>>>>> styling
   .primary-nav .primary-nav__page .primary-nav__page__url {
     color: #009E49;
     text-decoration: none; }
