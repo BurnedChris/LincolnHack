@@ -1,10 +1,10 @@
 // Card
 //
-//
 // Markup:
-// <div class="card {{modifier_class}}">
-//    <div class="blank-box"></div>
-//  button </div>
+//<div class="card">
+//  <div class="card__title"> Categories </div>
+//  <canvas id="categoriesChart" width="200" height="200"></canvas>
+//</div>
 //
 // Styleguide Components - Card
 
@@ -20,5 +20,4 @@
     border-radius: 5px;
     margin-bottom: 15px;
   }
-
 }
