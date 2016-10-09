@@ -30,12 +30,7 @@
 .header{
   background: #2c3e50;
   position: relative;
-  height: 50px;
-
-  .wrapper{
-  max-width: 1000px;
-    margin: auto;
-  }
+  height: 60px;
 
   .primary-nav{
     display: inline-block;
@@ -45,5 +40,5 @@
 .logo{
   color:#fff;
   display: inline-block;
-  line-height: 50px;
+  line-height: 60px;
 }
