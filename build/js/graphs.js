@@ -1,6 +1,6 @@
 (function() {
     // Categories Chart.
-    $.getJSON("//lcw.ngrok.io/api/stats?s=categories", function(data) {
+    $.getJSON("api/stats?s=categories", function(data) {
         var chart = $("#categoriesChart");
         var categoriesChart = new Chart(chart, {
             type: 'doughnut',
@@ -15,7 +15,7 @@
     });
 
     // Activities Chart.
-    $.getJSON("//lcw.ngrok.io/api/stats?s=activities", function(data) {
+    $.getJSON("api/stats?s=activities", function(data) {
         var chart = $("#activitiesChart");
         var categoriesChart = new Chart(chart, {
             type: 'bar',
@@ -31,8 +31,8 @@
         }})
     });
 
-    // Most Active User Chart.
-    $.getJSON("//lcw.ngrok.io/api/stats?s=mau", function(data) {
+    // Most Contributing User Chart.
+    $.getJSON("api/stats?s=mcu", function(data) {
         var chart = $("#mauChart");
         var mauChart = new Chart(chart, {
             type: 'bar',

@@ -10,10 +10,12 @@ use \Colors\RandomColor;
 // Default Timezone
 date_default_timezone_set('Europe/London');
 
-// Load dev environment.
-$dotenv = new Dotenv\Dotenv(__DIR__  . '/../');
-$dotenv->load();
-
+// Environment loader.
+if (!getenv("PRODUCTION") || getenv("PRODUCTION") ==  "FALSE") {
+	// Load dev environment.
+	$dotenv = new Dotenv\Dotenv(__DIR__  . '/../');
+	$dotenv->load();
+}
 // Initialise Twitter auth and parse Twitter data.
 Flight::map('pullTwitterData', function() {
 
@@ -133,8 +135,8 @@ Flight::route('GET /api/stats', function() {
 			activities();
 			break;
 
-		case 'mau':
-			mau();
+		case 'mcu':
+			mcu();
 			break;
 		
 		default:
@@ -229,6 +231,9 @@ function faux_data($n) {
 		$date = $faker->dateTimeThisMonth('now')->format('Y-m-d H:i:s');
 
 		// Build profile.
+
+		$rand_sig = $faker->md5;
+
 		$profile = [
 		"type" => "Feature",
 			"id" => $i,
@@ -238,8 +243,8 @@ function faux_data($n) {
 				"Date" => $date,
 				"User" => $username,
 				"Avatar" => $picture,
-				"Image" => "http://source.unsplash.com/collection/376921",
-				"Link" => "http://source.unsplash.com/collection/376921"
+				"Image" => "https://source.unsplash.com/collection/376921?sig=" . $rand_sig,
+				"Link" => "https://source.unsplash.com/collection/376921?sig=" . $rand_sig
 				],
 			"geometry" => [
 				"type" => "Point",
@@ -337,22 +342,22 @@ function categories() {
 	echo json_encode($stats);
 }
 
-// Most Active User stats.
-function mau() {
+// Most Contributing User stats.
+function mcu() {
 	$results = Flight::pullTwitterData();
 
 	// Query System, stats holder.
 	$status = (array)$results->statuses;
 	$counter = 0;
 
-	$mau = [
+	$mcu = [
 		 "labels" => [
 	    ],
 	    "datasets" => []
 	];
 
-	$mau["datasets"]["label"] = "Most Active User";
-	$mau["datasets"]["borderWidth"] = 1;
+	$mcu["datasets"]["label"] = "Most Contributing User";
+	$mcu["datasets"]["borderWidth"] = 1;
 
 	// Basic ranking system.
 	$rank = [
@@ -360,23 +365,23 @@ function mau() {
 		"score" => 0,
 	];
 
-	// Loop over the most active user.
+	// Loop over the most contributing user.
 	foreach ($status as $s) {
-		$mau["labels"][$counter] = $s->user->screen_name;
-		$mau["datasets"]["backgroundColor"] = [];
-		$mau["datasets"]["borderColor"] = [];
+		$mcu["labels"][$counter] = $s->user->screen_name;
+		$mcu["datasets"]["backgroundColor"] = [];
+		$mcu["datasets"]["borderColor"] = [];
 		$counter += 1;
 	}
 
 	// Count all instances of users contributions.
-	$mau["datasets"]["data"] = array_values(array_count_values($mau["labels"]));
-	$mau["labels"] = array_values(array_unique($mau["labels"]));
+	$mcu["datasets"]["data"] = array_values(array_count_values($mcu["labels"]));
+	$mcu["labels"] = array_values(array_unique($mcu["labels"]));
 
-	// Loop over all the users to find the most active one.
-	for ($i = 0; $i < count($mau["labels"]); $i++) { 
-		 if ($mau["datasets"]["data"][$i] > $rank["score"]) {
-		 	$rank["score"] = $mau["datasets"]["data"][$i];
-		 	$rank["name"] = $mau["labels"][$i];
+	// Loop over all the users to find the most contributing one.
+	for ($i = 0; $i < count($mcu["labels"]); $i++) { 
+		 if ($mcu["datasets"]["data"][$i] > $rank["score"]) {
+		 	$rank["score"] = $mcu["datasets"]["data"][$i];
+		 	$rank["name"] = $mcu["labels"][$i];
 		 }
 	}
 	
@@ -387,16 +392,16 @@ function mau() {
 	$second_color = RandomColor::one();
 
 	// Background & border colour for graph stats.
-	$mau["datasets"]["backgroundColor"] = [$color];
-	$mau["datasets"]["borderColor"] = [$second_color];
+	$mcu["datasets"]["backgroundColor"] = [$color];
+	$mcu["datasets"]["borderColor"] = [$second_color];
 
-	// Only get the Most Active User(s)
-	$mau["datasets"]["data"] = $rank["score"];
-	$mau["labels"] = $rank["name"];
+	// Only get the most contributing user(s)
+	$mcu["datasets"]["data"] = $rank["score"];
+	$mcu["labels"] = $rank["name"];
 
 	header('Content-Type: application/json');
 	header('Access-Control-Allow-Origin: *');
-	echo json_encode($mau);
+	echo json_encode($mcu);
 }
 
 // Start Flight.
