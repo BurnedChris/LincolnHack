@@ -1,6 +1,6 @@
 (function() {
     // Categories Chart.
-    $.getJSON("//lcw.ngrok.io/api/stats?s=categories", function(data) {
+    $.getJSON("//burnsy.github.io/LincolnHack/js/chart_categories.json", function(data) {
         var chart = $("#categoriesChart");
         var categoriesChart = new Chart(chart, {
             type: 'doughnut',
@@ -15,7 +15,7 @@
     });
 
     // Activities Chart.
-    $.getJSON("//lcw.ngrok.io/api/stats?s=activities", function(data) {
+    $.getJSON("//burnsy.github.io/LincolnHack/js/chart_activities.json", function(data) {
         var chart = $("#activitiesChart");
         var categoriesChart = new Chart(chart, {
             type: 'bar',
@@ -31,8 +31,8 @@
         }})
     });
 
-    // Most Active User Chart.
-    $.getJSON("//lcw.ngrok.io/api/stats?s=mau", function(data) {
+    // Most Contributing User Chart.
+    $.getJSON("//burnsy.github.io/LincolnHack/js/chart_mcu.json", function(data) {
         var chart = $("#mauChart");
         var mauChart = new Chart(chart, {
             type: 'bar',

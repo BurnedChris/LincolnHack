@@ -9,11 +9,6 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{user}/{style}/tiles/256/{z}/{x}/{
     accessToken: 'pk.eyJ1IjoiYnVybnN5IiwiYSI6ImNpdTE4ODhlMDAwMDQybm5yNGR6bzVidGIifQ.nQiLqpwmAMOU_rgA6Mbtaw',
 }).addTo(communityMap);
 
-// live server
-// //lcw.ngrok.io/api/fetch_faux_data?n=15
-// dummy data
-// markers.geojson
-
 $.getJSON("//burnsy.github.io/LincolnHack/js/markers.geojson", function (data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
